@@ -75,7 +75,7 @@ export default function Challenge({ challenge, onSuccess, onWrong }: Props) {
       {challenge.type === "matching" && (
         <div className="matching-game">
           <p className="mini-label">TAP EACH HABITAT CLUE TO MATCH IT</p>
-          {challenge.pairs.map((pair, index) => (
+          {challenge.pairs.map((pair) => (
             <button
               key={pair.right}
               className={`match-row ${matched.includes(pair.right) ? "matched" : ""}`}
